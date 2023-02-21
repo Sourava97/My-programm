@@ -1,0 +1,278 @@
+1-Check the alphabet is a vowel or consonant.
+  import java.util.Scanner;
+  class eight
+  {
+  public static void main(String args[])
+  {
+    char ch ;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the alphabet:");
+    ch= sc.next().charAt(0);
+
+ if(ch=='a'|| ch=='A')
+    {
+    System.out.println("It is vowel:");    
+    }
+    else
+   if(ch=='e'|| ch=='E')
+ {
+    System.out.println("It is vowel:");
+ } 
+    else
+     if(ch=='i'|| ch=='I')
+   {
+      System.out.println("It is vowel:");
+   }
+    else
+      if(ch=='o'|| ch=='O')
+      {
+         System.out.println("It is vowel:");
+      }
+    else
+      if(ch=='u'|| ch=='U')
+      {
+         System.out.println("It is vowel:");
+      }
+   
+    else
+          {
+             System.out.println("It is a consonant:");
+          }
+  }
+}
+
+2-// Write a JAVAprogram to input any alphabet and check whether it is vowel or consonant using if else.
+   import java.util.Scanner;
+   class eightt
+  {
+  public static void main(String args[])
+  {  
+
+  char ch;
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter the character:");
+  ch= sc.next().charAt(0);
+
+
+  if(ch =='a'|| ch =='e'|| ch =='i'|| ch =='o'|| ch =='u' )
+  {
+  System.out.println("Character is a vowel:");
+  }
+  else{
+  System.out.println("Character is a consonant:");
+
+  }
+  }
+}
+
+3-Factorial of a number
+
+import java.util.Scanner;
+class factorial
+  {
+    public static void main(String args[])
+    {
+      int i=1,fact=1,num;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the number:");
+      num= sc.nextInt();
+     
+      while(i<=num)
+        {
+          fact= fact*i;
+          i++;
+        }
+      System.out.println("Factorial of number is:" +fact);
+    }
+  }
+
+4-// Write a JAVAprogram to check whether a number is even or odd.
+  import java.util.Scanner;
+  class fifth
+  {
+  public static void main(String args[])
+  {
+    int num ;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number:");
+    num= sc.nextInt();
+      
+    if (num%2==0)
+    {
+    System.out.println("Number is even:");    
+    }
+    else
+    {
+    System.out.println("Number is odd:");
+    }  
+  
+  }
+}
+
+5-//Write a JAVAprogram to find maximum between two numbers.
+import java.util.Scanner;
+class first
+  {
+    public static void main(String args[])
+    {
+      int a,b;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the first number:");
+      a= sc.nextInt();
+      System.out.println("Enter the second number:");
+      b= sc.nextInt();
+      if(a>b)
+      {
+        System.out.println("The maximum number is:" +a);
+      }
+      else
+      {
+        System.out.println("The maximum number is:" +b);
+      }
+      
+    }
+  }
+
+6- //Write a JAVAprogram to check whether a number is divisible by 5 and 11 or not.
+   import java.util.Scanner;
+   class fourth
+   {
+    public static void main(String args[])
+    {
+      int n;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter a number:");
+      n= sc.nextInt();
+      if (n%5==0 && n%11==0)
+      {
+  System.out.println("\n Given number " + n + " is Divisible by 5 and 11");
+      }
+      else{
+  System.out.println("\n Given number " + n + " is not Divisible by 5 and 11");
+      }
+    }
+  }
+
+7- Multiplication table
+
+ import java.util.Scanner;
+ class multiplication
+  {
+    public static void main(String args[])
+    {
+      int i=1,num;
+        Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the number");
+      num= sc.nextInt();
+      while(i<=10)
+        {
+          System.out.println(num+"X"+i +"=" +i*num);
+          i++;
+        }
+      
+    }
+  }
+
+8- //Write a JAVAprogram to find maximum between three numbers
+   import java.util.Scanner;
+   class second
+   {
+  public static void main(String args[])
+  {
+    int a,b,c;
+    Scanner sc = new Scanner (System.in);
+    System.out.println("Enter the numbers:");
+    a= sc.nextInt();
+    b= sc.nextInt();
+    c= sc.nextInt();
+ if(a>b)
+    {
+  if(a>c){
+    System.out.println("A is big:");
+    }
+      else{
+        System.out.println("C is big:");
+      }
+    }
+    else
+
+   if(b>c){
+    System.out.println("B is big:");
+   }
+     else
+   {
+     System.out.println("C is big:");
+   }
+    
+ }  
+  }
+
+
+9- //Write a JAVAprogram to check whether a character is alphabet or not.
+    import java.util.Scanner;
+    class seventh
+    {
+    public static void main(String args[])
+    {
+      char ch;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter a character:");
+      ch= sc.next().charAt(0);
+      if((ch>='a' && ch<='z') || (ch>='A' && ch<='z'))
+      {
+          System.out.println("It is an alphabet:");
+      }
+      else{
+          System.out.println("It is not an alphabet:");
+      }
+    }
+  }
+
+
+10- //Write a JAVAprogram to check whether a year is leap year or not.
+   import java.util.Scanner;
+   class sixth
+   {
+  public static void main(String args[])
+  {
+    int year;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the year:");
+    year= sc.nextInt();
+    if ((year%4==0) && (year%100!=0) || (year%400==0))
+    {
+    System.out.println(year+ "It is a leap year:");
+    }
+    else
+ {
+    System.out.println(year+"It is not a leap year:");
+ }  
+  
+  }
+}
+
+
+11- // Write a JAVAprogram to check whether a number is negative, positive or zero.
+    import java.util.Scanner;
+    class third
+    {
+    public static void main(String args[])
+    {
+      int n;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the number:");
+      n= sc.nextInt();
+      if(n<0)
+      {
+        System.out.println("The number is negative:");
+      }
+      else if(n>0){
+        System.out.println("The number is positive:");
+      }
+      else{
+        System.out.println("The number is zero:");
+      }
+    }
+  }
+
+

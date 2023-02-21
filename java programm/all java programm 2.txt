@@ -1,0 +1,372 @@
+1-Find the area of a circle.
+  import java.util.Scanner;
+
+  class Circle 
+  {
+  public static void main(String args[])
+    {
+      int r;
+      Float area;
+      Float pi=3.14f;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the radius of circle:");
+      r=sc.nextInt();
+      area= pi*r*r;
+      System.out.println("area of the circle:" +area);
+      
+      
+    }
+}
+
+
+2- Find the area of a rectangle.
+
+  import java.util.Scanner;
+
+   class rectangle 
+   {
+   public static void main(String args[])
+
+   {
+    int length, breadth, area;
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the length of the rectangle: ");
+    length = sc.nextInt();
+    System.out.println("Enter the breadth of the rectangle:");
+    breadth = sc.nextInt();
+    area = length * breadth;
+    System.out.println("Area of the reactangle:" +area);
+
+  }
+
+}
+
+
+3- Employee information
+    import java.util.Scanner;
+    class zero
+    {
+      public static void main(String args[])
+      {
+      int eno;
+      String ename;
+        float esal;
+
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter employee number:");
+       eno=sc.nextInt();
+        System.out.println("Enter employee name:");
+        ename=sc.next();
+
+        System.out.println("Enter employee salary:");
+       esal=sc.nextFloat();
+        
+        System.out.println("The given employee number:" +eno);
+        System.out.println("The given employee name:" +ename);
+        System.out.println("The given employee salary:" +esal);
+        
+        
+          }
+    }
+
+
+4- Armstrong number or not.
+   import java.util.Scanner;
+   class armstrong
+  {
+    public static void main(String args[])
+    {
+      int n,sum=0,t,d;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter the numbers:");
+      n= sc.nextInt();
+      t=n;
+     
+      while(n>0)
+        {
+          d=n%10;
+          sum= sum+(d*d*d);
+          n=n/10;
+        }
+      if(t==sum)
+      {
+        System.out.println("It's a armstrong number:");
+      }
+      else
+      {
+        System.out.println("Not a armstrong nmber:");
+      }
+    }
+  }
+
+
+5- Vowel or consonant using if condition
+
+import java.util.Scanner;
+class alpha
+{
+  public static void main(String args[])
+  {  
+
+char ch;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the character:");
+ch= sc.next().charAt(0);
+
+
+if(ch =='a'|| ch =='e'|| ch =='i'|| ch =='o'|| ch =='u' )
+{
+  System.out.println("Character is a vowel:");
+}
+else{
+  System.out.println("Character is a consonant:");
+
+}
+}
+}
+
+6-Vowel or consonant using if else condition
+  import java.util.Scanner;
+  class alphabet
+  {
+  public static void main(String args[])
+  {
+    char ch ;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the alphabet:");
+    ch= sc.next().charAt(0);
+
+ if(ch=='a'|| ch=='A')
+    {
+    System.out.println("It is vowel:");    
+    }
+    else
+   if(ch=='e'|| ch=='E')
+ {
+    System.out.println("It is vowel:");
+ } 
+    else
+     if(ch=='i'|| ch=='I')
+   {
+      System.out.println("It is vowel:");
+   }
+    else
+      if(ch=='o'|| ch=='O')
+      {
+         System.out.println("It is vowel:");
+      }
+    else
+      if(ch=='u'|| ch=='U')
+      {
+         System.out.println("It is vowel:");
+      }
+   
+    else
+          {
+             System.out.println("It is a consonant:");
+          }
+  }
+}
+
+7-Find the biggest number using if else
+
+import java.util.Scanner;
+class big
+{
+  public static void main(String args[])
+  {
+    int a,b,c;
+    Scanner sc = new Scanner (System.in);
+    System.out.println("Enter the numbers:");
+    a= sc.nextInt();
+    b= sc.nextInt();
+    c= sc.nextInt();
+ if(a>b)
+    {
+  if(a>c){
+    System.out.println("A is big:");
+    }
+      else{
+        System.out.println("C is big:");
+      }
+    }
+    else
+
+   if(b>c){
+    System.out.println("B is big:");
+   }
+     else
+   {
+     System.out.println("C is big:");
+   }
+    
+ }  
+  }
+
+8- Vote eligibilty test using if else
+ import java.util.Scanner;
+
+class eligible {
+  public static void main(String args[]) {
+    int age;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the age:");
+    age = sc.nextInt();
+    if (age >= 18) {
+      System.out.println("He is eligible to vote:");
+    } else {
+      System.out.println("He is not eligibe to vote:");
+    }
+
+  }
+}
+
+9- Calcultor using switch case
+   import java.util.Scanner;
+   class calculator
+    {
+    public static void main(String args[])
+    {
+      int a=0,b=0,ch;
+      double c;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("welcome to calculator:");
+      System.out.println("---------------------:");
+      System.out.println("[1] Addition:");
+      System.out.println("[2] Subcration:");
+      System.out.println("[3] Multiplication:");
+      System.out.println("[4] Division:");
+      System.out.println("[5] Remainder:");
+
+      System.out.println("enter your choice");
+      ch=sc.nextInt();
+
+     if(ch<=5){
+       System.out.println("print a,b values");
+        a=sc.nextInt();
+        b=sc.nextInt();
+     }
+      
+      switch(ch){
+        case 1:
+          c=(a + b );
+          System.out.println("the addition of two numbers is:"+c);
+          break;
+        case 2:
+          c=(a-b);
+          System.out.println("the subscraction of two numbers is:"+c);
+          break;
+        case 3:
+          c=(a*b);
+          System.out.println("the multiplication of two numbers is:"+c);
+          break;
+           case 4:
+          c=(a/b);
+          System.out.println("the division of two numbers is :"+c);
+          break;
+        case 5:
+          c=(a%b);
+          System.out.println("the modulous of two numbers is:"+c);
+          break;
+        default:
+          System.out.println("wrong choice");
+      } 
+    
+   }
+}
+
+10- //to check the given number is EVEN or ODD using switch case
+  import java.util.Scanner;
+   class odd
+  {
+    public static void main(String args[])
+    {
+      int num;
+      boolean a;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("enter the number:");
+      num=sc.nextInt();
+    
+     Switch(num%2);
+     {
+      case0:
+      System.out.println("Number is even:");
+      break;
+       case1:
+       System.out.println("Number is odd");
+       break;
+      default:
+      System.out.println("Wrong choice");
+      }
+    }
+    }
+  
+11- Vowel or not using switch case
+
+ import java.util.Scanner;
+class Switchalpha
+  {
+    public static void main(String args[])
+    {
+      char ch;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the alphabet:");
+      ch= sc.next().charAt(0);
+      switch(ch){
+        case'a': case'A':
+        case'e': case'E':          
+        case 'i': case'I':
+        case'o': case'O':      
+        case'u': case'U':
+          System.out.println("Its vowel");
+          break;
+        default:
+          System.out.println("Its a consonant");
+      }
+      
+    }  
+      
+      
+  }
+
+12-Find the day of the week using switch case.
+ import java.util.Scanner;
+class switchcase
+  {
+    public static void main(String args[])
+    {
+      int day;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("enter the number of day:");
+      day=sc.nextInt();
+      switch(day){
+        case 1:
+          System.out.println("its monday");
+          break;
+        case 2:
+          System.out.println("its tuesday");
+          break;
+        case 3:
+          System.out.println("its wednesday");
+          break;
+           case 4:
+          System.out.println("its thursday");
+          break;
+        case 5:
+          System.out.println("its friday");
+          break;
+        case 6:
+          System.out.println("its saturday");
+          break;
+        case 7:
+          System.out.println("its sunday");
+          break;
+        default:
+          System.out.println("wrong choice");
+      }
+      
+    }  
+      
+      
+  }
